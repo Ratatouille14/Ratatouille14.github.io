@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!--link color : black-->
+        <style type="text/css">
+            a:link {color:black; text-decoration:none;}
+            a:visited {color:black; text-decoration: none;}
+            a:hover {color:black; text-decoration:none;}
+            a:active {color:black; text-decoration:none;}
+        </style>
+
+
+        <style>
+            #test_btn1{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius:5px;
+                border: 1px solid #4169E1;
+                background-color: rgba(0,0,0,0);
+                color: #4169E1;
+                margin-right: 5px;
+                padding:5px;
+            }
+            #test_btn2{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius:5px;
+                border: 1px solid #4169E1;
+                background-color: rgba(0,0,0,0);
+                color: #4169E1;
+                margin-right: 5px;
+                padding:5px;
+            }
+            #test_btn3{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius:5px;
+                border: 1px solid #4169E1;
+                background-color: rgba(0,0,0,0);
+                color: #4169E1;
+                margin-right: 5px;
+                padding:5px;
+            }
+            #btn_group button:hover{
+                color:white;
+                background-color:#4169E1;
+
+            }
+
+            #s_a{
+              border-bottom: 4px solid#18464a;
+              padding-bottom: 3px;
+
+            }
+            #s_b{
+              border-bottom: 4px solid#18464a;
+              padding-bottom: 3px;
+
+            }
+            #s_c{
+              border-bottom: 4px solid#18464a;
+              padding-bottom: 3px;
+
+            }
+
+        </style>
+
+
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this template -->
+        <link href="css/landing-page.min.css" rel="stylesheet">
+        <link href="css-circular-prog-bar.css" media="all" rel="stylesheet">
+
+
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Flink</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx84909dae75d54ef8a634e5f6be023dd1"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="jquery-circle-progress/dist/circle-progress.js"></script>
+        <script type="text/javascript">
+
+
+$('.circle').circleProgress({
+    value: 0.75,
+    fill: {gradient: [['pink',1], ['pink',1]], gradientAngle: Math.PI / 4}
+  }).on('circle-animation-progress', function(event, progress, stepValue) {
+    $(this).find('b').text(stepValue.toFixed(2).substr(1)*100+"%");
+  });
+
+                
+    </script>
+    </head>
+    <body>
+
+
+      <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index_l.html">Flink</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">배송 현황</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+    <body>
+
+
+<div style="padding:60px 100px 100px 100px;">
+<div id="btn_group">
+        <button id="test_btn1" onclick="location.href='#s_a'">배달원 A</button>
+        <button id="test_btn2" onclick="location.href='#s_b'">배달원 B</button>
+        <button id="test_btn3" onclick="location.href='#s_c'">배달원 C</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<a id=s_a name=s_a style="font-size: 30px; font-weight: bold;">배달원 A</a>
+<br>
+<br>
+<br>
+<br>
+<section class="center">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-4">
+            <a href="list.html">
+            <h3 style="color:#18464a">전체 배송 현황</h3>
+            </a>
+            <div class="progress-circle p33">
+              <span>33%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <a href="list.html#t_a">
+            <h4>Truck 배송 현황</h4>
+          </a>
+            <div class="progress-circle p25">
+              <span>25%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+          <a href="list.html#m_a">
+            <h4>Micro Mobility 배송 현황</h4>
+          </a>
+            <div class="progress-circle p40">
+              <span>40%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <hr width = 100% style="border:#879394 1px dashed">
+    <br>
+    <br>
+
+
+
+    <a id="s_b" name="s_b" style="font-size: 30px; font-weight: bold;">배달원 B</a>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-4">
+            <a href="list_b.html">
+            <h3 style="color:#18464a">전체 배송 현황</h3>
+            </a>
+            <div class="progress-circle p33">
+              <span>33%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <a href="list_b.html#t_b">
+            <h4>Truck 배송 현황</h4>
+          </a>
+            <div class="progress-circle p25">
+              <span>25%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+          <a href="list_b.html#m_b">
+            <h4>Micro Mobility 배송 현황</h4>
+          </a>
+            <div class="progress-circle p40">
+              <span>40%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <hr width = 100% style="border:#879394 1px dashed">
+    <br>
+    <br>
+
+    <a id="s_c" name="s_c" style="font-size: 30px; font-weight: bold;">배달원 C</a>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-4">
+            <a href="list_c.html">
+            <h3 style="color:#18464a">전체 배송 현황</h3>
+            </a>
+            <div class="progress-circle p33">
+              <span>33%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <a href="list_c.html#t_c">
+            <h4>Truck 배송 현황</h4>
+          </a>
+            <div class="progress-circle p25">
+              <span>25%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+          <a href="list_c.html#m_c">
+            <h4>Micro Mobility 배송 현황</h4>
+          </a>
+            <div class="progress-circle p40">
+              <span>40%</span>
+              <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Flink 2020. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    </body>
+</html> 

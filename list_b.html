@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+
+        <!--link color : black-->
+        <style type="text/css">
+            a:link {color:black; text-decoration:none;}
+            a:visited {color:black; text-decoration: none;}
+            a:hover {color:black; text-decoration:none;}
+            a:active {color:black; text-decoration:none;}
+        </style>
+
+        <style>
+            #test_btn2{
+                border: 1px solid #4169E1;
+                background-color:#4169E1;
+                color:white;
+                margin-right: 5px;
+
+            }
+            #test_btn1{
+                border: 1px solid #4169E1;
+                background-color: rgba(0,0,0,0);
+                color: #4169E1;
+                margin-right: 5px;
+
+            }
+            #test_btn3{
+                border: 1px solid #4169E1;
+                background-color: rgba(0,0,0,0);
+                color: #4169E1;
+
+            }
+
+            #btn_group button{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius:5px;
+
+  
+                padding:5px;
+            }
+            #btn_group button:hover{
+                color:white;
+                background-color:#4169E1;
+
+            }
+        </style>
+
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this template -->
+        <link href="css/landing-page.min.css" rel="stylesheet">
+
+        <link href="css/checkbox.css" rel="stylesheet" type="checkbox/css">
+
+
+
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Flink</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx84909dae75d54ef8a634e5f6be023dd1"></script>
+        <script type="text/javascript">
+                
+    </script>
+    </head>
+    <body>
+
+
+      <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index_l.html">Flink</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">배송 목록</h1>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    
+    function selectChkBox() {
+    var k = form.choice.length;
+    var ck = false;
+    var cn = 0;
+    if(k>0){
+      for(var i = 0; i <k; i++){
+        if(form.choice[i].checked){
+          ck = true;
+          cn++;
+        }
+      }
+    }  else{
+      if(form.choice.checked){
+        ck=true;
+      }
+    }
+
+    if(ck == false){
+      alert("추가된 항목이 없습니다.");
+    }else{
+      alert("배송 목록이 저장되었습니다.");
+      return;
+    }
+  }
+
+        
+    </script>
+
+
+  </header>
+
+
+
+
+    <body>
+<div style="padding:40px 100px 40px 100px;">
+
+  <div id="btn_group">
+        <button id="test_btn1" onclick="location.href='list.html'">배달원 A</button>
+        <button id="test_btn2" onclick="location.href='list_b.html'">배달원 B</button>
+        <button id="test_btn3" onclick="location.href='list_c.html'">배달원 C</button>
+    </div>
+    <br>
+    <br>
+
+      <form action='a.jsp'>
+        <br>
+        <a name="t_b">
+        <h4>Truck 배송 목록</h4>
+        </a>
+        <div style="checkbox/css">
+        <input type='checkbox' id = "ct1" name='truck' value='스타벅스'/>
+        <label for="ct1">스타벅스  || capacity : 2</label><br>
+        <input type='checkbox' id = "ct2" name='truck' value='종로상회'/>
+        <label for="ct2">종로상회  || capacity : 1</label><br>
+        <input type='checkbox' id = "ct3" name='truck' value='이마트24'/>
+        <label for="ct3">이마트24  || capacity : 4</label><br>
+      </div>
+
+        
+       
+        <br>
+        <div class="col-20 col-lg-3">
+        <input type="button" name="button" class="btn btn-block btn-lg btn-primary" value="Truck 배송 결과 저장" onClick="selectChkBox();">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+<div>
+        <a name="m_b">
+        <h4>Micro Mobility 배송 목록</h4>
+        </a>
+        <input type='checkbox' id = "cm1" name='mobility' value='Mate Hotel'/>
+        <label for="cm1">Mate Hotel  || capacity : 2</label><br>
+        <input type='checkbox' id = "cm2" name='mobility' value='CGV'/>
+        <label for="cm2">CGV  || capacity : 2</label><br>
+        <input type='checkbox' id = "cm3" name='mobility' value='우리은행'/>
+        <label for="cm3">우리은행  || capacity : 1</label><br>
+        <input type='checkbox' id = "cm4" name='mobility' value='하나은행'/>
+        <label for="cm4">하나은행  || capacity : 1</label><br>
+        
+        <br>
+
+
+        <div class="col-30 col-lg-3">
+        <input type="button" name="button" class="btn btn-block btn-lg btn-primary"  value="Micro mobility 배송 결과 저장" onClick="selectChkBox();">
+        </div>
+        <br>
+        <br>
+        <br>
+</div>
+
+
+
+      </form>
+
+</div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="#">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Flink 2020. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="#">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+    </body>
+</html> 
