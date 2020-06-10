@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+
+
+        <!--link color : black-->
+        <style type="text/css">
+            a:link {color:black; text-decoration:none;}
+            a:visited {color:black; text-decoration: none;}
+            a:hover {color:black; text-decoration:none;}
+            a:active {color:black; text-decoration:none;}
+        </style>
+
+        <style>
+            #test_btn1{
+                border: 1px solid #4169E1;
+                background-color:#4169E1;
+                color:white;
+                margin-right: 5px;
+
+            }
+            #test_btn2{
+                border: 1px solid #4169E1;
+                background-color: rgba(0,0,0,0);
+                color: #4169E1;
+                margin-right: 5px;
+
+            }
+            #test_btn3{
+                border: 1px solid #4169E1;
+                background-color: rgba(0,0,0,0);
+                color: #4169E1;
+
+            }
+
+            #btn_group button{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius:5px;
+
+  
+                padding:5px;
+            }
+            #btn_group button:hover{
+                color:white;
+                background-color:#4169E1;
+
+            }
+        </style>
+
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this template -->
+        <link href="css/landing-page.min.css" rel="stylesheet">
+
+        <link href="css/checkbox.css" rel="stylesheet" type="checkbox/css">
+
+
+
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Flink</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx84909dae75d54ef8a634e5f6be023dd1"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+                
+    </script>
+    </head>
+    <body>
+
+
+      <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="a_index.html">Flink</a>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">배송 목록</h1>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    
+    function selectChkBox() {
+    var k = form.choice.length;
+    var ck = false;
+    var cn = 0;
+    if(k>0){
+      for(var i = 0; i <k; i++){
+        if(form.choice[i].checked){
+          ck = true;
+          cn++;
+        }
+      }
+    }  else{
+      if(form.choice.checked){
+        ck=true;
+      }
+    }
+
+    if(ck == false){
+      alert("추가된 항목이 없습니다.");
+    }else{
+      alert("배송 목록이 저장되었습니다.");
+      return;
+    }
+  }
+
+        
+    </script>
+
+
+
+
+    <script type="text/javascript">
+            $(document).ready(function(){
+
+
+              $.getJSON("truckdata1.json", function(tdata){
+
+                
+                document.getElementById("tlist0").innerHTML=tdata[0].name + " || capacity :" + tdata[0].capacity + " || weight :" + tdata[0].weight;
+
+                document.getElementById("tlist1").innerHTML=tdata[1].name + " || capacity :" + tdata[1].capacity + " || weight :" + tdata[1].weight;
+
+                document.getElementById("tlist2").innerHTML=tdata[2].name + " || capacity :" + tdata[2].capacity + " || weight :" + tdata[2].weight;
+
+                document.getElementById("tlist3").innerHTML=tdata[3].name + " || capacity :" + tdata[3].capacity + " || weight :" + tdata[3].weight;
+
+                document.getElementById("tlist4").innerHTML=tdata[4].name + " || capacity :" + tdata[4].capacity + " || weight :" + tdata[4].weight;
+
+                document.getElementById("tlist5").innerHTML=tdata[5].name + " || capacity :" + tdata[5].capacity + " || weight :" + tdata[5].weight;
+
+                document.getElementById("tlist6").innerHTML=tdata[6].name + " || capacity :" + tdata[6].capacity + " || weight :" + tdata[6].weight;
+
+                document.getElementById("tlist7").innerHTML=tdata[7].name + " || capacity :" + tdata[7].capacity + " || weight :" + tdata[7].weight;
+
+                document.getElementById("tlist8").innerHTML=tdata[8].name + " || capacity :" + tdata[8].capacity + " || weight :" + tdata[8].weight;
+
+                document.getElementById("tlist9").innerHTML=tdata[9].name + " || capacity :" + tdata[9].capacity + " || weight :" + tdata[9].weight;
+
+                document.getElementById("tlist10").innerHTML=tdata[10].name + " || capacity :" + tdata[10].capacity + " || weight :" + tdata[10].weight;
+
+                document.getElementById("tlist11").innerHTML=tdata[11].name + " || capacity :" + tdata[11].capacity + " || weight :" + tdata[11].weight;
+
+                document.getElementById("tlist12").innerHTML=tdata[12].name + " || capacity :" + tdata[12].capacity + " || weight :" + tdata[12].weight;
+
+                document.getElementById("tlist13").innerHTML=tdata[13].name + " || capacity :" + tdata[13].capacity + " || weight :" + tdata[13].weight;
+
+                document.getElementById("tlist14").innerHTML=tdata[14].name + " || capacity :" + tdata[14].capacity + " || weight :" + tdata[14].weight;
+
+                document.getElementById("tlist15").innerHTML=tdata[15].name + " || capacity :" + tdata[15].capacity + " || weight :" + tdata[15].weight;
+
+                document.getElementById("tlist16").innerHTML=tdata[16].name + " || capacity :" + tdata[16].capacity + " || weight :" + tdata[16].weight;
+
+                document.getElementById("tlist17").innerHTML=tdata[17].name + " || capacity :" + tdata[17].capacity + " || weight :" + tdata[17].weight;
+
+                document.getElementById("tlist18").innerHTML=tdata[18].name + " || capacity :" + tdata[18].capacity + " || weight :" + tdata[18].weight;
+
+                document.getElementById("tlist19").innerHTML=tdata[19].name + " || capacity :" + tdata[19].capacity + " || weight :" + tdata[19].weight;
+
+                document.getElementById("tlist20").innerHTML=tdata[20].name + " || capacity :" + tdata[20].capacity + " || weight :" + tdata[4].weight;
+
+                document.getElementById("tlist21").innerHTML=tdata[21].name + " || capacity :" + tdata[21].capacity + " || weight :" + tdata[4].weight;
+
+                document.getElementById("tlist22").innerHTML=tdata[22].name + " || capacity :" + tdata[22].capacity + " || weight :" + tdata[4].weight;
+
+                document.getElementById("tlist23").innerHTML=tdata[23].name + " || capacity :" + tdata[23].capacity + " || weight :" + tdata[4].weight;
+
+
+
+              });
+
+
+            });
+
+
+
+
+            $(document).ready(function(){
+
+
+              $.getJSON("micromobilitydata1.json", function(mdata){
+
+                
+                //document.getElementById("mlist0").innerHTML=mdata[0].name + " || capacity :" + mdata[0].capacity + " || weight :" + mdata[0].weight;
+
+                document.getElementById("mlist1").innerHTML=mdata[1].name + " || capacity :" + mdata[1].capacity + " || weight :" + mdata[1].weight;
+
+                document.getElementById("mlist2").innerHTML=mdata[2].name + " || capacity :" + mdata[2].capacity + " || weight :" + mdata[2].weight;
+
+                //document.getElementById("mlist3").innerHTML=mdata[3].name + " || capacity :" + mdata[3].capacity + " || weight :" + mdata[3].weight;
+
+                document.getElementById("mlist4").innerHTML=mdata[4].name + " || capacity :" + mdata[4].capacity + " || weight :" + mdata[4].weight;
+
+                document.getElementById("mlist5").innerHTML=mdata[5].name + " || capacity :" + mdata[5].capacity + " || weight :" + mdata[5].weight;
+
+                //document.getElementById("mlist6").innerHTML=mdata[6].name + " || capacity :" + mdata[6].capacity + " || weight :" + mdata[6].weight;
+
+                document.getElementById("mlist7").innerHTML=mdata[7].name + " || capacity :" + mdata[7].capacity + " || weight :" + mdata[7].weight;
+
+                document.getElementById("mlist8").innerHTML=mdata[8].name + " || capacity :" + mdata[8].capacity + " || weight :" + mdata[8].weight;
+
+
+
+              });
+
+
+            });
+
+          </script>
+
+
+
+
+
+
+  </header>
+
+
+
+
+    <body>
+
+    <div style="padding:40px 40px 40px 40px;">
+
+
+    <br>
+    <br>
+
+      <form action='a.jsp'>
+        <br>
+        <a nmae="t_a">
+        <h4>Truck 배송 목록</h4>
+        <br>
+        </a>
+        <div style="checkbox/css">
+
+        <input type='checkbox' id = "ct0" name='truck' value='0'/>
+        <label for="ct0" id="tlist0"></label><br>
+
+        <input type='checkbox' id = "ct1" name='truck' value='1'/>
+        <label for="ct1" id="tlist1"></label><br>
+
+        <input type='checkbox' id = "ct2" name='truck' value='2'/>
+        <label for="ct2" id="tlist2"></label><br>
+
+        <input type='checkbox' id = "ct3" name='truck' value='3'/>
+        <label for="ct3" id="tlist3"></label><br>
+
+        <input type='checkbox' id = "ct4" name='truck' value='4'/>
+        <label for="ct4" id="tlist4"></label><br>
+
+        <input type='checkbox' id = "ct5" name='truck' value='5'/>
+        <label for="ct5" id="tlist5"></label><br>
+
+        <input type='checkbox' id = "ct6" name='truck' value='6'/>
+        <label for="ct6" id="tlist6"></label><br>
+
+        <input type='checkbox' id = "ct7" name='truck' value='7'/>
+        <label for="ct7" id="tlist7"></label><br>
+
+        <input type='checkbox' id = "ct8" name='truck' value='8'/>
+        <label for="ct8" id="tlist8"></label><br>
+
+        <input type='checkbox' id = "ct9" name='truck' value='9'/>
+        <label for="ct9" id="tlist9"></label><br>
+
+        <input type='checkbox' id = "ct10" name='truck' value='10'/>
+        <label for="ct10" id="tlist10"></label><br>
+
+        <input type='checkbox' id = "ct11" name='truck' value='11'/>
+        <label for="ct11" id="tlist11"></label><br>
+
+        <input type='checkbox' id = "ct12" name='truck' value='12'/>
+        <label for="ct12" id="tlist12"></label><br>
+
+        <input type='checkbox' id = "ct13" name='truck' value='13'/>
+        <label for="ct13" id="tlist13"></label><br>
+
+        <input type='checkbox' id = "ct14" name='truck' value='14'/>
+        <label for="ct14" id="tlist14"></label><br>
+
+        <input type='checkbox' id = "ct15" name='truck' value='15'/>
+        <label for="ct15" id="tlist15"></label><br>
+
+        <input type='checkbox' id = "ct16" name='truck' value='16'/>
+        <label for="ct16" id="tlist16"></label><br>
+
+        <input type='checkbox' id = "ct17" name='truck' value='17'/>
+        <label for="ct17" id="tlist17"></label><br>
+
+        <input type='checkbox' id = "ct2" name='truck' value='18'/>
+        <label for="ct18" id="tlist18"></label><br>
+
+        <input type='checkbox' id = "ct19" name='truck' value='19'/>
+        <label for="ct19" id="tlist19"></label><br>
+
+        <input type='checkbox' id = "ct20" name='truck' value='20'/>
+        <label for="ct20" id="tlist20"></label><br>
+
+        <input type='checkbox' id = "ct21" name='truck' value='21'/>
+        <label for="ct21" id="tlist21"></label><br>
+
+        <input type='checkbox' id = "ct22" name='truck' value='22'/>
+        <label for="ct22" id="tlist22"></label><br>
+
+        <input type='checkbox' id = "ct23" name='truck' value='23'/>
+        <label for="ct23" id="tlist23"></label><br>
+
+      </div>
+
+        
+       
+        <br>
+        <div class="col-20 col-lg-3">
+        <input type="button" name="button" class="btn btn-block btn-md btn-primary" value="Truck 배송 저장" onClick="selectChkBox();">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+<div>
+        <a name=m_a>
+        <h4>Micro Mobility 배송 목록</h4>
+        <br>
+        </a>
+        
+
+        <input type='checkbox' id = "cm1" name='mobility' value='1'/>
+        <label for="cm1" id="mlist1"></label><br>
+
+        <input type='checkbox' id = "cm2" name='mobility' value='2'/>
+        <label for="cm2" id="mlist2"></label><br>
+
+        <input type='checkbox' id = "cm4" name='mobility' value='4'/>
+        <label for="cm4" id="mlist4"></label><br>
+
+        <input type='checkbox' id = "cm5" name='mobility' value='5'/>
+        <label for="cm5" id="mlist5"></label><br>
+
+        <input type='checkbox' id = "cm7" name='mobility' value='7'/>
+        <label for="cm7" id="mlist7"></label><br>
+
+        <input type='checkbox' id = "cm8" name='mobility' value='8'/>
+        <label for="cm8" id="mlist8"></label><br>
+        
+        <br>
+
+
+        <div class="col-30 col-lg-3">
+        <input type="button" name="button" class="btn btn-block btn-md btn-primary"  value="MM 배송 저장" onClick="selectChkBox();">
+        </div>
+        <br>
+        <br>
+        <br>
+</div>
+
+
+
+      </form>
+
+</div>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Flink 2020. All Rights Reserved.</p>
+        </div>
+      
+      </div>
+    </div>
+  </footer>
+
+
+    </body>
+</html> 
